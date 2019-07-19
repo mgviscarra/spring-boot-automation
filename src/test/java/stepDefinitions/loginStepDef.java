@@ -6,8 +6,13 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.net.MalformedURLException;
+
 public class loginStepDef {
     WebDriver driver = Browser.launch();
+
+    public loginStepDef() throws MalformedURLException {
+    }
 
     @Given("^I go to \"([^\"]*)\"$")
     public void i_go_to(String url) throws Throwable {
