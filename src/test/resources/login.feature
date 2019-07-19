@@ -1,6 +1,6 @@
 Feature: Blog Login
   Scenario:
-    Given I go to "http://localhost:8090"
+    Given I go to "http://blog:8090"
     And I set user name with "invalid"
     And I set password with "invalid"
     And I click on login button
