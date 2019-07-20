@@ -17,6 +17,7 @@ public class Browser {
         options.setAcceptInsecureCerts(true);
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mauricio.viscarra\\Documents\\ChromeDriver\\chromedriver.exe");
         RemoteWebDriver driver = new RemoteWebDriver(new URL(host),options);
+        //WebDriver driver = new ChromeDriver(options);
         return driver;
     }
 }
